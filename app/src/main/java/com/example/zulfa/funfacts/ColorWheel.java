@@ -25,7 +25,7 @@ public class ColorWheel  {
     //Methods - Actions the object can take
 
     public  int getColor(){
-        //Randomly select a fact
+        //Randomly select a color
         Random randomGenerator = new Random();
         int randomNumber = randomGenerator.nextInt(colors.length);
         int color = Color.parseColor(colors[randomNumber]);

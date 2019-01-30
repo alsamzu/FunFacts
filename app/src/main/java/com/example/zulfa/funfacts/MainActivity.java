@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     // Declare our view variables
         private TextView factTextView;
         private Button showFactButton;
+
         private RelativeLayout relativeLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,10 +30,10 @@ public class MainActivity extends AppCompatActivity {
         factTextView = findViewById(R.id.factTextView);
         showFactButton = (Button) findViewById(R.id.ShowFactButton);
         relativeLayout = (RelativeLayout) findViewById(R.id.relativeLayout) ;
-
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 String fact = factBook.getFact();
 
 
